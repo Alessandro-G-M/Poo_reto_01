@@ -34,13 +34,14 @@ def calculadora(x,op,y):
 
 
 ```python
-def palindromo(txt):
+def palindromo(palabra):
     
-    n = len(txt)
-    #Ciclo que recorre la mitad de la palabra
+    n = len(palabra)
+    
     for i in range(n//2):
-        if (txt[i] != txt[n-1-i]):
+        if (palabra[i] != palabra[n-1-i]):
             return False
+        
     return True
 
 ```
