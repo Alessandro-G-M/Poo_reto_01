@@ -6,8 +6,10 @@
 
 
 ```python
+#1. Calculadora Simple
 
 def calculadora(x,op,y):
+    print(f'{x} {op} {y} \n')
     #suma
     if op == '+':
         return x + y
@@ -49,7 +51,7 @@ def palindromo(txt):
 En este problema fue necesario usar 2 funciones, una que compruebe si un numero es primo y otro que agregue en una lista aquellos que lo seán. Para esto hallé un metodo que comprueba si un numero es primo utilizando una operación de modulo hasta cierto punto para utilizar menos tiempo. Luego de ello la segunda función comprueba cada numero, agregandolo en la lista si este cumple con la condición de ser primo lo agrega a una lista previamente creada.
 
 ```python
-def esPrimo(n):
+def es_primo(n):
 
   for k in range(2,int(n**0.5)+1):
     if((n%k)== 0):
@@ -57,12 +59,12 @@ def esPrimo(n):
 
   return True
 
-def listaPrimos(N):
+def lista_primos(N):
     n = len(N)
     X = []
     
     for i in range(n):
-        if esPrimo(N[i]):
+        if es_primo(N[i]):
             X.append(N[i])
             
     return X
@@ -75,7 +77,7 @@ def listaPrimos(N):
 Para este problema utilizando un ciclo se puede comprobar cada suma cambiando el valor de una variable, previamente iniciada en 0, si es que la suma consecutiva de los dos valores es mayor que ella.
 
 ```python
-def consecutiveSum(M):
+def suma_consecutiva(M):
     n = len(M)
     x = 0
     
@@ -94,7 +96,7 @@ En este caso ordeno cada palabra en orden alfabetico para que sea mas sencillo c
 
 ```pyhton
 
-def mismasLetras(palabras):
+def mismas_letras(palabras):
   resultado = []
   n = len(palabras)
     
