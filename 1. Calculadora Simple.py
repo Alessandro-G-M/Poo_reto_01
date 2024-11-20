@@ -7,17 +7,19 @@ def calculadora(x,op,y):
         return x + y
     
     #resta
-    if op == '-':
+    elif op == '-':
         return x - y
     
     #multiplicación
-    if op == '*':
+    elif op == '*':
         return x * y
     
     
     #división
-    if op == '/':
+    elif op == '/':
         return x/y
+        
+    else: return 'Operación no valida'
     
 if __name__ == "__main__":
 
