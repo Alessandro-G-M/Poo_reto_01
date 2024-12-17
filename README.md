@@ -96,7 +96,6 @@ def suma_consecutiva(M):
 En este caso ordeno cada palabra en orden alfabetico para que sea mas sencillo comparar las palabras, y de esta forma agregarlas a una lista si es que son iguales
 
 ```pyhton
-
 def mismas_letras(palabras):
   resultado = []
   n = len(palabras)
